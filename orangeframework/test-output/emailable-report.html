@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">9</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">33,211</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">ActualTestcase.MyInfoTestCase</td><td><a href="#m0">putemployeeId</a></td><td rowspan="1">1736269674409</td><td rowspan="1">8476</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">ActualTestcase.LeaveTestcase</td><td><a href="#m1">clickLeaveButton</a></td><td rowspan="1">1736269687241</td><td rowspan="1">587</td></tr><tr class="passedeven"><td><a href="#m2">verifyApplicationLeave</a></td><td rowspan="1">1736269687832</td><td rowspan="1">632</td></tr><tr class="passedodd"><td rowspan="3">ActualTestcase.LoginTestCase</td><td><a href="#m3">DashboardPage</a></td><td rowspan="1">1736269663664</td><td rowspan="1">690</td></tr><tr class="passedodd"><td><a href="#m4">cliclloginBtn</a></td><td rowspan="1">1736269662656</td><td rowspan="1">1002</td></tr><tr class="passedodd"><td><a href="#m5">entercredentials</a></td><td rowspan="1">1736269658329</td><td rowspan="1">4319</td></tr><tr class="passedeven"><td rowspan="4">ActualTestcase.MyInfoTestCase</td><td><a href="#m6">clickMyInfoButton</a></td><td rowspan="1">1736269672571</td><td rowspan="1">803</td></tr><tr class="passedeven"><td><a href="#m7">driverlicence</a></td><td rowspan="1">1736269682896</td><td rowspan="1">4343</td></tr><tr class="passedeven"><td><a href="#m8">entertheCredentails</a></td><td rowspan="1">1736269673992</td><td rowspan="1">417</td></tr><tr class="passedeven"><td><a href="#m9">verifyApplicationMyInfo</a></td><td rowspan="1">1736269673381</td><td rowspan="1">608</td></tr></tbody>
+</table>
+<h2>Test</h2><h3 id="m0">ActualTestcase.MyInfoTestCase#putemployeeId</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>8956743</td><td>5678910</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=131.0.6778.205)
+Build info: version: &apos;4.16.0&apos;, revision: &apos;15400459dd*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4cbd6f516fb035c97b47035abdfb5f70, sendKeysToElement {id=f.D8D0233DC7C708B04031589F6476DD26.d.0325E94FF7D3104944C1206A0D9F01D3.e.67, value=[Ljava.lang.CharSequence;@595f4da5}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\jabba\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55027}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55027/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (4cbd6f516fb035c97b47035abdfb5f70)] -&gt; xpath: //label[normalize-space()=&apos;Other Id&apos;]]
+Session ID: 4cbd6f516fb035c97b47035abdfb5f70
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
+	at Pages.MyInfoPage.putemployeeId(MyInfoPage.java:89)
+	at ActualTestcase.MyInfoTestCase.putemployeeId(MyInfoTestCase.java:53)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">ActualTestcase.LeaveTestcase#clickLeaveButton</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">ActualTestcase.LeaveTestcase#verifyApplicationLeave</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">ActualTestcase.LoginTestCase#DashboardPage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">ActualTestcase.LoginTestCase#cliclloginBtn</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">ActualTestcase.LoginTestCase#entercredentials</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">ActualTestcase.MyInfoTestCase#clickMyInfoButton</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">ActualTestcase.MyInfoTestCase#driverlicence</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">ActualTestcase.MyInfoTestCase#entertheCredentails</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">ActualTestcase.MyInfoTestCase#verifyApplicationMyInfo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

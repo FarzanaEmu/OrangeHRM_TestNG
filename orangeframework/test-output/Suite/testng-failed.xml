@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="firstName" value="Jhon"/>
+    <parameter name="EmPloyeeID" value="8956743"/>
+    <parameter name="MiddleName" value="Abraham"/>
+    <parameter name="OtherId" value="5678910"/>
+    <classes>
+      <class name="ActualTestcase.MyInfoTestCase">
+        <methods>
+          <include name="GoogleSetUp"/>
+          <include name="putemployeeId" invocation-numbers="0"/>
+          <include name="Background"/>
+        </methods>
+      </class> <!-- ActualTestcase.MyInfoTestCase -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

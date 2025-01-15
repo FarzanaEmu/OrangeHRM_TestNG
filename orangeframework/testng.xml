@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+	  
+	
+  
+	   <parameter name="firstName" value="Jhon"/>
+    <parameter name="MiddleName" value="Abraham"/>
+   
+    <parameter name="EmPloyeeID" value="8956743"/>
+    <parameter name="OtherId" value="5678910"/>
+   
+    <classes>
+      <class name="ActualTestcase.LoginTestCase"/>
+      <class name="ActualTestcase.MyInfoTestCase"/>
+      <class name="ActualTestcase.LeaveTestcase"/>
+    </classes>
+  </test>
+</suite>
