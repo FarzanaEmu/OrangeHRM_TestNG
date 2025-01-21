@@ -32,6 +32,7 @@ public class LoginTestCase extends Testbase{
 	@Test(priority=3)
 	public void   DashboardPage()  {
 		dp.verifyDashboardPage();
+		System.out.println("Im in the Dashboard page");
 	
 	}
 }
