@@ -60,7 +60,7 @@ public class MyInfoTestCase extends Testbase {
        
 
        
-       // driver license
+       
         // Driver's License Number
        // WebElement licenseNumberField = driver.findElement(By.id("licenseNumber")); // Replace with actual locator
         //licenseNumberField.clear();
