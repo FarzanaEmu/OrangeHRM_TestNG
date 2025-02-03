@@ -3,15 +3,20 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+      <class name="ActualTestcase.LeaveTestcase">
+        <methods>
+          <include name="verifyApplicationLeave"/>
+          <include name="Background"/>
+          <include name="GoogleSetUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- ActualTestcase.LeaveTestcase -->
       <class name="ActualTestcase.MyInfoTestCase">
         <methods>
-          <include name="verifyApplicationMyInfo"/>
-          <include name="driverlicence"/>
           <include name="GoogleSetUp"/>
-          <include name="clickMyInfoButton"/>
-          <include name="entertheCredentails"/>
           <include name="putemployeeId"/>
           <include name="Background"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- ActualTestcase.MyInfoTestCase -->
     </classes>

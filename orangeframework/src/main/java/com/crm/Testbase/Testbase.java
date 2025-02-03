@@ -42,7 +42,7 @@ public class Testbase {
 }
 	
 	
-		//@AfterClass
+		@AfterClass
 	public void tearDown()
 	{
 		driver.quit();

@@ -1,19 +1,25 @@
 package ActualTestcase;
 
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
+import com.crm.Testbase.Testbase;
 
 import Pages.DashboardPage;
 import Pages.LeavePage;
 import Pages.MyInfoPage;
 
-public class LeaveTestcase {
+public class LeaveTestcase  extends Testbase{
 	DashboardPage dp =new DashboardPage();
 	MyInfoPage info;
 	LeavePage lp;
 	 LoginTestCase logintest;
+	 
+	 
 
-	  //  @BeforeClass
+	    @BeforeMethod
 	    public   void Background() throws InterruptedException {
 	    	LoginTestCase logintest = new LoginTestCase();
 	        logintest. entercredentials();   
