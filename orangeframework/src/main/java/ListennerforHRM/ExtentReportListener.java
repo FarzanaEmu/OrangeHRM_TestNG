@@ -50,7 +50,7 @@ public class ExtentReportListener  extends ExtentManager implements ITestListene
 
 		  public void onFinish(ITestContext context) {
 		    try {
-		      Map<String, Object> testResult = new HashMap<>();
+		      Map<String, Object> testResult = new HashMap<String, Object>();
 		      testResult.put("TotalTestCaseCount", context.getAllTestMethods().length);
 		      testResult.put("PassedTestCaseCount", context.getPassedTests().size());
 		      testResult.put("FailedTestCaseCount", context.getFailedTests().size());
